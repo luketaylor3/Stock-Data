@@ -1,0 +1,180 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#header {
+    background-color: #fff;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#outerContainer{
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    background-color: #111111;
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar{
+    background: #fff;
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    padding: 2px;
+    border-radius: 4px;
+    align-items: center;
+    
+
+}
+
+#select{
+    background: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 300px;
+    padding: 25px 20px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+}
+
+#select img{
+    width: 15px;
+
+}
+
+#select ul{
+    position: absolute;
+    top: 120%;
+    left: 0;
+    list-style: none;
+    background: #fff;
+    color: #555;
+    width: 100%;
+    border-radius: 4px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#select ul li{
+    padding: 10px 20px;
+
+}
+
+.search-bar input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+
+#select ul.open{
+    max-height: 300px;
+}
+
+#enter{
+    width: 200px;
+    background-color: #160053;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+}
+
+#submit {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+}
+  
+#submit.clicked {
+    background-color: #555;
+    transition: background-color 0.2s ease-out;
+}
+  
+
+button .fa-solid{
+    width: 25px;
+    color:#160053;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.inputWrapper{
+    position: relative;
+    width: 100%;
+}
+
+.inputField{
+    padding: 8px;
+    width: 100%;
+}
+
+.autocompleteSuggestions{
+    font-size: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;width: 100%;
+    background-color: #fff;
+    border: 0;
+    border-top: none;
+    border-radius: 4px;
+    padding-top: 10px;
+    z-index: 1;
+}
+
+.autocompleteSuggestions li {
+    padding-top: 5px;
+}
+
+#results li.hovered {
+    background-color: #f2f2f2;
+    
+}
+
+#companyName {
+    color : white;
+    padding-top: 30px;
+    padding-left: 60px;
+}
+
+#currentPrice {
+    color: white;
+    padding-top: 10px;
+    padding-left: 60px;
+}
+
+#plotlyDiv {
+    margin-top: 50px;
+}
